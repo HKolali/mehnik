@@ -1,0 +1,284 @@
+/* Start Top-Bar Styles */
+
+.top-bar {
+    display: flex;
+    padding: 1.5rem;
+    background-color: #e5e7eb;
+}
+
+.top-bar__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-bar__menu {
+    display: flex;
+}
+
+.top-bar__menu-item {
+    padding: 0 1.5rem;
+}
+
+.top-bar__item-link {
+    color: var(--dark-color);
+    font-size: 1.4rem;
+}
+
+.top-bar__content-left {
+    display: flex;
+}
+
+.top-bar__email,
+.top-bar__phone {
+    padding: 0 1.5rem;
+}
+
+.top-bar__email-text,
+.top-bar__phone-text {
+    color: var(--dark-color);
+    font-size: 1.4rem;
+    cursor: copy;
+}
+
+.top-bar__email-icon,
+.top-bar__phone-icon {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+/* Finish Top-Bar Styles */
+
+/* Start Main-Header Styles */
+
+.main-header{
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 2px 2px 5px #ddd;
+    z-index: 2;
+}
+
+.main-header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+}
+
+.main-header__content-right {
+    display: flex;
+}
+
+.main-header__logo {
+    width: 8rem;
+    height: 6rem;
+}
+
+.main-header__menu {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.main-header__menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    position: relative;
+}
+
+.main-header__item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.main-header__link-icon {
+    padding: 0.5rem;
+    width: 1rem;
+}
+
+.main-header__dropdown {
+    display: none;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 24rem;
+    padding: 2rem 0;
+    border-radius: 1rem;
+    transition: all 400ms ease;
+    box-shadow: 0 2px 5px 0 #bebebe;
+    border-bottom: 3px solid var(--primary-color);
+    background-color: var(--white-color);
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    left: 0;
+}
+
+.main-header__menu-item:hover .main-header__dropdown {
+    display: flex;
+}
+
+.main-header__dropdown-item {
+    line-height: 4rem;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    width: 22rem;
+}
+
+.main-header__dropdown-item:hover {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.main-header__content-left {
+    display: flex;
+    align-items: center;
+}
+
+.main-header__searchbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.main-header__search-input {
+    border: 0;
+    background-color: #f1f1f1;
+    padding: 1.5rem 1.5rem 1.5rem 4rem;
+    border-radius: 50px;
+    font-family: var(--font-family-medium);
+    width: 20rem;
+    transition: width 500ms ease;
+    font-size: 1.5rem;
+}
+
+.main-header__search-input:hover {
+    border: 1px solid #ccc;
+}
+
+.main-header__search-input:focus {
+    width: 25rem;
+}
+
+.main-header__search-icon {
+    position: absolute;
+    left: 1rem;
+    color: #333;
+    font-size: 2rem;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.main-header__theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    width: 5.5rem;
+    height: 5.5rem;
+    margin-right: 1rem;
+}
+
+.main-header__theme:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.main-header__theme-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.main-header__profile {
+    display: none; /* flex */
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    width: 5.5rem;
+    height: 5.5rem;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.main-header__profile:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.main-header__profile-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.main-header__profile-icon:hover .main-header__profile-dropdown{
+    display: flex;
+}
+
+.main-header__profile-dropdown {
+    display: none;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 24rem;
+    padding: 2rem 0;
+    border-radius: 1rem;
+    transition: all 400ms ease;
+    box-shadow: 0 2px 5px 0 #ccc;
+    background-color: var(--white-color);
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.main-header__profile-dropdown-item {
+    line-height: 5rem;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    width: 22rem;
+    display: flex;
+    align-items: center;
+}
+
+.main-header__profile-dropdown-item:nth-child(6) {
+    background-color: #ccc;
+    height: 1px;
+    margin: 1rem;
+}
+
+.main-header__profile-dropdown-item:nth-child(6):hover {
+    background-color: #ccc;
+    height: 1px;
+    margin: 1rem;
+}
+
+.main-header__profile-dropdown-item:hover {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.main-header__profile-dropdown-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.main-header__profile-dropdown-link {
+    margin-right: 1rem;
+    font-size: 1.6rem;
+}
+
+.main-header__profile-dropdown-link:hover {
+    color: var(--dark-color);
+}
+
+/* Finish Main-Header Styles */

@@ -1,0 +1,23 @@
+@import './fonts.css';
+
+:root {
+    --anjoman-bold: "Anjoman-Bold";
+    --arshia: "Arshia";
+    --font-family: "Vazir";
+    --font-family-thin: "Vazir-Thin";
+    --font-family-light: "Vazir-Light";
+    --font-family-medium: "Vazir-Medium";
+    --font-family-bold: "Vazir-Bold";
+
+    --primary-color: #8f2eff;
+    --secondary-color: #ac66fd;
+    --white-color: #fff;
+    --dark-color: #464749;
+    --blue-color: #0693e3;
+    --blue-lite-color: rgba(153, 14, 233, 0.1);
+    --price-color: rgb(43, 143, 84);
+    --box-icon-color: rgb(109, 109, 109);
+    --rate-color: rgb(235, 180, 28);
+    --box-text-icon-color: rgb(163, 163, 163);
+    --box-shadow: rgb(179, 178, 178);
+}
