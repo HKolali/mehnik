@@ -21,7 +21,7 @@
 // });
 
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.list-product-swiper', {
     slidesPerView: 4,
     spaceBetween: 15,
     loop: true,
@@ -35,3 +35,4 @@ const swiper = new Swiper('.swiper', {
 setInterval(() => {
     swiper.slidePrev();
 }, 3000);
+
